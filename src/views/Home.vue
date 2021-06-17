@@ -1,18 +1,36 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>签到器</h1>
+    <login-reg></login-reg>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import login_reg from "../components/Login_Reg.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
+  data() {
+    return {
+    };
+  },
   components: {
-    HelloWorld
-  }
-}
+    "login-reg": login_reg,
+  },
+  methods: {
+  },
+};
 </script>
+
+
+<style lang="less">
+.home {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+</style>
